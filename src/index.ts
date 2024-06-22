@@ -1,5 +1,4 @@
-import { env } from "./env";
+import { getStationData } from "./01-naive";
 
-console.log(`Hello from ${env.NODE_ENV}`);
-
-console.log(process.env);
+const result = await getStationData();
+console.log(result);
